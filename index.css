@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: 'Inter';
+}
+
+.caixa {
+    position: absolute;
+    padding: 2.5em 0px 0px 2.5em;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.esquerda {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-mensagem {
+    display: flex;
+    margin: 10.5em 0px 0px 16.5em;
+}
+
+.mensagem {
+    background: #F3F5FC;
+    font-family: 'Inter';
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.mensagem::placeholder {
+    color: #0A3871;
+}
+
+.minusculas {
+    display: flex;
+    margin: 38em 0px 0px 16.5em;
+    height: 1.125em;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.btn {
+    display: flex;
+    margin: 1.6em 1.6em 1.6em 15em;
+}
+
+.btn input {
+    width: 20em;
+    height: 4em;
+    margin-left: 1.5em;
+    border-radius: 2em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+}
+
+.btn-criptografar {
+    color: #FFFFFF;
+    background: #0A3871;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.btn-descriptografar {
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.direita {
+    width: 30%;
+    display: flex;
+}
+
+.apresenta-texto {
+    text-align: center;
+    margin-top: 2.5em;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 944px;
+    border-radius: 2em;
+
+}
+
+.imagem {
+    margin-top: 13em;
+    padding: 0 2em 0 2em;
+}
+
+.apresenta-texto p {
+    margin-top: 3em;
+    padding: 0 2em 0 2em;
+}
+
+.p1-apresenta-texto {
+    color: #343A40;
+}
+
+.p2-apresenta-texto {
+    color: #495057;
+}
+
