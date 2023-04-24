@@ -15,6 +15,7 @@ body {
 }
 
 .conteudo {
+    width: 100%;
     display: flex;
 }
 
@@ -95,8 +96,8 @@ body {
     text-align: center;
     margin-top: 2.5em;
     background-color: #FFFFFF;
-    width: 400px;
-    height: 944px;
+    width: 95%;
+    height: 95%;
     border-radius: 2em;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
@@ -127,7 +128,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    /* Inicia responsividade telas pequenas intermediárias */
+    /* Inicia responsividade telas intermediárias */
     .caixa, .conteudo, .esquerda, .caixa-mensagem, 
     .minusculas, .btn, .direita, .apresenta-texto{
         width: 100%;
@@ -140,7 +141,7 @@ body {
     }
 
     .caixa h1 img {
-        margin: 4.58875em 0px 0px 0px;
+        margin: 4.5875em 0px 0px 0px;
     }
 
     .conteudo {
@@ -194,4 +195,45 @@ body {
         margin: 1em 0 0 0;
     }
     /* Finaliza layout para telas intermediárias */
+}
+
+@media screen and (max-width: 490px) {
+    /* Inicia responsividade telas pequenas */
+
+    .caixa h1 img {
+        margin: 1.5em 0px 0px -1.8em;
+    }
+    .caixa-mensagem {
+        margin: 5em 0px 0px 1em;
+        display: block;
+    }
+
+    .minusculas {
+        margin: 15.68em 0px 0px 1em;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .btn input {
+        width: 90%;
+        margin: 0px auto 1.5em auto;
+    }
+
+    .direita {
+        margin-top: 3em;
+    }
+
+    .apresenta-texto {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto 0 auto;
+    }
+
+    .p1-apresenta-texto, .p2-apresenta-texto {
+        padding: 0;
+    }
+
+    /* Finaliza layout para telas pequenas */
 }
