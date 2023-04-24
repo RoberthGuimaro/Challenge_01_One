@@ -52,6 +52,10 @@ body {
     opacity: 0.8;
 }
 
+.minusculas img {
+    margin-right: 10px;
+}
+
 .btn {
     display: flex;
     margin: 1.6em 1.6em 1.6em 15em;
@@ -61,7 +65,7 @@ body {
     width: 20em;
     height: 4em;
     margin-left: 1.5em;
-    border-radius: 2em;
+    border-radius: 1.5em;
     font-size: 1em;
     border: none;
     cursor: pointer;
@@ -94,7 +98,7 @@ body {
     width: 400px;
     height: 944px;
     border-radius: 2em;
-
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .imagem {
@@ -102,16 +106,92 @@ body {
     padding: 0 2em 0 2em;
 }
 
-.apresenta-texto p {
+.p1-apresenta-texto {
+    color: #343A40;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.2;
     margin-top: 3em;
     padding: 0 2em 0 2em;
 }
 
-.p1-apresenta-texto {
-    color: #343A40;
-}
-
 .p2-apresenta-texto {
     color: #495057;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1em;
+    margin-top: 3em;
+    padding: 0 2em 0 2em;
 }
 
+@media screen and (max-width: 768px) {
+    /* Inicia responsividade telas pequenas intermediárias */
+    .caixa, .conteudo, .esquerda, .caixa-mensagem, 
+    .minusculas, .btn, .direita, .apresenta-texto{
+        width: 100%;
+    }
+
+    .caixa {
+        display: block;
+        position: static;
+        padding: 0px;
+    }
+
+    .caixa h1 img {
+        margin: 4.58875em 0px 0px 0px;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .caixa-mensagem {
+        display: inline-block;
+        margin: 7.25em 0px 0px 2.5em;
+    }
+
+    .minusculas {
+        margin: 0px;
+        margin: 34.25em 0px 0px 2.5em;
+    }
+
+    .btn {
+        margin: 1em auto;
+       
+   
+    }
+
+    .btn input {
+        margin: 0px;
+        margin-left: 2.5em;
+    }
+
+    .direita {
+        display: inline-block;
+        align-items: center;
+        align-content: center;
+        margin-top: 1em;
+    }
+
+    .apresenta-texto {
+        width: 41.75em;
+        height: 8.3125em;
+        padding: 2em;
+        margin: 0px auto 3em auto;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .p1-apresenta-texto{
+        margin: 0px;
+    }
+
+    .p2-apresenta-texto {
+        margin: 1em 0 0 0;
+    }
+    /* Finaliza layout para telas intermediárias */
+}
