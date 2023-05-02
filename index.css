@@ -39,6 +39,7 @@ body {
     font-size: 2em;
     line-height: 150%;
     color: #0A3871;
+    text-transform: lowercase;    
 }
 
 .mensagem::placeholder {
